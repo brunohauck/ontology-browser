@@ -227,40 +227,7 @@
       </plugin>
 
 
-      <!-- Good to run locally for dev -->
-      <plugin>
-        <groupId>org.eclipse.jetty</groupId>
-        <artifactId>jetty-maven-plugin</artifactId>
-        <version>11.0.21</version>
-        <configuration>
-          <stopKey>STOP</stopKey>
-          <stopPort>9999</stopPort>
-<!--          <scanIntervalSeconds>5</scanIntervalSeconds>-->
-        </configuration>
-      </plugin>
 
-      <!-- Required for heroku deployment -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>${dependency-plugin.version}</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals><goal>copy</goal></goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>org.eclipse.jetty</groupId>
-                  <artifactId>jetty-runner</artifactId>
-                  <version>${jetty.version}</version>
-                  <destFileName>jetty-runner.jar</destFileName>
-                </artifactItem>
-              </artifactItems>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 
