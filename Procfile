@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* org.apache.catalina.startup.Tomcat -httpPort $PORT target/*.war
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* org.apache.catalina.startup.Tomcat -httpPort 80 target/*.war
