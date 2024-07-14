@@ -229,17 +229,7 @@
                 <version>${war-plugin.version}</version>
             </plugin>
 
-            <!-- Tomcat Maven Plugin for running Tomcat -->
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>${tomcat7-plugin.version}</version>
-                <configuration>
-                    <url>http://localhost:8080/manager/text</url>
-                    <server>TomcatServer</server>
-                    <path>/ontology-browser</path>
-                </configuration>
-            </plugin>
+
 
             <!-- Required for heroku deployment -->
             <plugin>
