@@ -238,7 +238,7 @@
                         <contextPath>/</contextPath>
                     </webApp>
                     <httpConnector>
-                        <port>80</port> <!-- Porta que o Jetty irá utilizar -->
+                        <port>443</port> <!-- Porta que o Jetty irá utilizar -->
                     </httpConnector>
                 </configuration>
             </plugin>
