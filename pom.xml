@@ -234,9 +234,8 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>${jetty.version}</version>
                 <configuration>
-        
                     <httpConnector>
-                        <port>443</port> <!-- Porta que o Jetty irá utilizar -->
+                        <port>8080</port> <!-- Porta que o Jetty irá utilizar -->
                     </httpConnector>
                 </configuration>
             </plugin>
